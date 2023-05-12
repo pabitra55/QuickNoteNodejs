@@ -4,7 +4,9 @@
   "description": "quicknotes - note everything on you finger tips",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node dist/index.js",
+    "build": "rm -rf dist && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
