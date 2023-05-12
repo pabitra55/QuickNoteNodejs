@@ -15,11 +15,12 @@ app.use(express.json()) // Enables the middleware to access data from bady end s
 app.use(cors());
 app.use('/app/auth', require('./routes/auth'));
 app.use('/app/notes', require('./routes/notes'));
+// app.use('/app/notes', require('./Utils/welcome.html'));
 
 
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.sendFile(`${__dirname}/Utils/welcome.html`)
 });
 
 app.get('/api/ver1/login', (req, res) => {
