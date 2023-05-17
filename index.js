@@ -5,9 +5,9 @@ const cors = require('cors');
 
 const port = 8080
 
-connectToMongo();
 
 app.use(express.json()) // Enables the middleware to access data from bady end so on 
+connectToMongo();
 
 
 // ******* Route Collection ********
