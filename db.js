@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 // const url = "mongodb://localhost:27017/VividTechHubDB"; // Local Database
-const url = 'mongodb+srv://pabitrakumarnahak22:gQ6LIKgTsZn3mIab@vivid-tech-hub-db.8czxlhn.mongodb.net/'; // Cloud Database
+const url = "mongodb+srv://pabitrakumarnahak22:gQ6LIKgTsZn3mIab@vivid-tech-hub-db.8czxlhn.mongodb.net/VividTechHubDB"; // Cloud Database
 
 const connectToMongo = () => {
   try {
