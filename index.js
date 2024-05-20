@@ -20,6 +20,7 @@ app.use('/app/notes', require('./routes/notes'));
 
 
 app.get('/', (req, res) => {
+    console.log('hii')
     res.sendFile(`${__dirname}/Utils/welcome.html`)
 });
 
